@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ôn từ vựng Tiếng Anh 7</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<h1>Ôn tập từ vựng Tiếng Anh 7</h1>
+<div class="card">
+  <div class="row">
+    <label>Bộ từ:</label>
+    <select id="src"></select>
+  </div>
+  <div class="row" style="margin-top:8px">
+    <label>Bài:</label>
+    <select id="mode">
+      <option value="vi2en">Cho tiếng Việt → chọn tiếng Anh</option>
+      <option value="en2vi">Cho tiếng Anh → chọn tiếng Việt</option>
+      <option value="stress">Chọn từ có trọng âm khác</option>
+      <option value="fill">Điền từ vào chỗ trống</option>
+      <option value="list">Xem danh sách từ</option>
+    </select>
+    <label>Số câu:</label>
+    <select id="num"><option>10</option><option>20</option><option>30</option><option value="999" selected>Tất cả</option></select>
+    <button class="pri" id="start">Bắt đầu</button>
+  </div>
+</div>
+<div class="card" id="box"><p class="muted">Chọn bộ từ, bài và bấm <b>Bắt đầu</b>.</p></div>
+</div>
+<script src="data-sgk.js"></script>
+<script src="data-mypas.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
